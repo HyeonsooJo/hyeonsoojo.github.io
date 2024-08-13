@@ -88,13 +88,17 @@
           </em>
         {%- else -%}
           {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+            <div style="display:inline; color:#ADAEB3"> 
+              <a href="{{ coauthor_url }}">
+                {{- author.first }}
+                {{ author_last_html -}}
+              </a>
+            </div>
+          {%- else -%}
+            <div style="display:inline; color:#ADAEB3"> 
               {{- author.first }}
               {{ author_last_html -}}
-            </a>
-          {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
+            </div>
           {% endif %}
         {%- endif -%}
       {% endfor %}
