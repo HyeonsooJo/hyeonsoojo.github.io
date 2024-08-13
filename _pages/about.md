@@ -43,8 +43,8 @@ scholar:
       </ul>
 </div>
 
-<div style=";font-size:1.2em;color:#ADAEB3">
-  <div style="display:inline">Email</div> 
+<div style=";font-size:1.0em;color:#ADAEB3">
+  <div style="display:inline;font-weight: bold;">Email:</div> 
   hsjo (at) kaist.ac.kr
 </div> 
                                                                                                   
