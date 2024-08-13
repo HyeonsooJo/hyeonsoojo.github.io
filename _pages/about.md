@@ -42,4 +42,9 @@ scholar:
           <li>Graph mining</li>
       </ul>
 </div>
+
+<div style=";font-size:1.2em;color:#ADAEB3">
+  <div style="display:inline">Email</div> 
+  hsjo (at) kaist.ac.kr
+</div> 
                                                                                                   
