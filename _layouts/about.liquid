@@ -48,6 +48,14 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Edu -->
+    {% if page.education %}
+      <h2>
+        <div style="color: inherit; font-weight: bold;">Education</div>
+      </h2>
+      {% include education.liquid limit=true %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
