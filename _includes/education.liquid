@@ -1,0 +1,25 @@
+<div class="education">
+  {% if site.education != blank %}
+    <table class="table table-sm table-borderless" style="font-size:1.2em">
+      {% assign education = site.education | reverse %}
+      {% assign education_limit = education_size %}
+        {% for item in education limit: education_limit %}
+        <tr>
+          {% if item.end == none %}
+            <th scope="row" style="width: 20%">{{ item.start | date: '%b, %Y' }} - Present</th>
+          {% else %}
+            <th scope="row" style="width: 20%">{{ item.start | date: '%b, %Y' }} - {{ item.end | date: '%b, %Y' }}</th>
+          {% endif %}
+          <td>
+            <div style="display:inline; font-weight: bold;">
+              {{item.title}}
+            </div>
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% else %}
+    <p>No education so far...</p>
+  {% endif %}
+</div>
